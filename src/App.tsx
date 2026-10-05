@@ -126,27 +126,30 @@ function MainApp() {
 
   // Fetch live products and orders from server API on boot
   useEffect(() => {
-    fetch('/api/products')
-      .then((res) => (res.ok ? res.json() : null))
-      .then((data) => {
-        if (data && Array.isArray(data.products) && data.products.length > 0) {
-          setProducts(data.products);
-        }
-      })
-      .catch(() => {
-        // Uses INITIAL_PRODUCTS
-      });
+    const loadProducts = async () => {
+      try {
+        const res = await fetch('/api/products');
+        if (!res.ok) return;
+        const data = await res.json();
+        if (Array.isArray(data) && data.length > 0) setProducts(data);
+      } catch {
+        // Uses INITIAL_PRODUCTS as an offline-safe fallback.
+      }
+    };
 
-    fetch('/api/orders')
-      .then((res) => (res.ok ? res.json() : null))
-      .then((data) => {
-        if (data && Array.isArray(data.orders) && data.orders.length > 0) {
-          setOrders(data.orders);
-        }
-      })
-      .catch(() => {
-        // Uses MIGRATED_ORDERS
-      });
+    const loadOrders = async () => {
+      try {
+        const res = await fetch('/api/orders');
+        if (!res.ok) return;
+        const data = await res.json();
+        if (Array.isArray(data) && data.length > 0) setOrders(data);
+      } catch {
+        // Uses MIGRATED_ORDERS as an offline-safe fallback.
+      }
+    };
+
+    void loadProducts();
+    void loadOrders();
   }, []);
 
   // Read URL query parameters for direct links (e.g. ?open=cart, ?section=loja)
