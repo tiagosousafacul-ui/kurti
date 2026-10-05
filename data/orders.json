@@ -1,0 +1,193 @@
+[
+  {
+    "id": "ord-1788975594319",
+    "orderNumber": "KRT-1087",
+    "customerName": "Mariana Valente",
+    "customerEmail": "mariana@teste.com",
+    "customerPhone": "(31) 98888-7777",
+    "shippingAddress": {
+      "street": "Rua Principal",
+      "number": "100",
+      "neighborhood": "Centro",
+      "city": "São Paulo",
+      "state": "SP",
+      "cep": "01000-000"
+    },
+    "items": [
+      {
+        "productId": "prod-krt-001",
+        "productName": "Camiseta Kurti \"Orgulho & Luta\"",
+        "price": 89.9,
+        "quantity": 1,
+        "size": "P",
+        "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "subtotal": 89.9,
+    "shipping": 15,
+    "total": 104.9,
+    "paymentMethod": "PIX",
+    "status": "Confirmado",
+    "trackingCode": "BR904113439BR",
+    "createdAt": "2026-09-09T17:39:54.319Z",
+    "updatedAt": "2026-09-09T17:39:54.319Z"
+  },
+  {
+    "id": "ord-1082",
+    "orderNumber": "KRT-1082",
+    "customerName": "Lucas Albuquerque Souza",
+    "customerEmail": "lucas.albuquerque@gmail.com",
+    "customerPhone": "(31) 99841-2290",
+    "shippingAddress": {
+      "street": "Rua Sergipe",
+      "number": "840",
+      "neighborhood": "Savassi",
+      "city": "Belo Horizonte",
+      "state": "MG",
+      "cep": "30130-171"
+    },
+    "items": [
+      {
+        "productId": "prod-krt-001",
+        "productName": "Camiseta Kurti \"Orgulho & Luta\"",
+        "price": 89.9,
+        "quantity": 1,
+        "size": "M",
+        "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "productId": "prod-krt-005",
+        "productName": "Pin Colecionável Metal Esmaltado Kurti Rainbow",
+        "price": 24.9,
+        "quantity": 2,
+        "image": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "subtotal": 139.7,
+    "shipping": 14.9,
+    "total": 154.6,
+    "paymentMethod": "PIX",
+    "status": "Entregue",
+    "trackingCode": "BR849201934MG",
+    "createdAt": "2026-09-02T14:22:00-03:00",
+    "updatedAt": "2026-09-06T11:15:00-03:00"
+  },
+  {
+    "id": "ord-1081",
+    "orderNumber": "KRT-1081",
+    "customerName": "Beatriz Martins Nogueira",
+    "customerEmail": "bia.martins@outlook.com",
+    "customerPhone": "(11) 98712-4433",
+    "shippingAddress": {
+      "street": "Alameda Santos",
+      "number": "1205",
+      "neighborhood": "Cerqueira César",
+      "city": "São Paulo",
+      "state": "SP",
+      "cep": "01419-001"
+    },
+    "items": [
+      {
+        "productId": "prod-krt-002",
+        "productName": "Moletom Canguru Kurti LGBT Clássico",
+        "price": 189.9,
+        "quantity": 1,
+        "size": "G",
+        "image": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "productId": "prod-krt-004",
+        "productName": "Ecobag Algodão Cru \"Orgulho Não Cabe no Armário\"",
+        "price": 45,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "subtotal": 234.9,
+    "shipping": 0,
+    "total": 234.9,
+    "paymentMethod": "Cartão de Crédito",
+    "status": "Em transporte",
+    "trackingCode": "BR910248591SP",
+    "createdAt": "2026-09-05T09:41:00-03:00",
+    "updatedAt": "2026-09-08T16:00:00-03:00"
+  },
+  {
+    "id": "ord-1080",
+    "orderNumber": "KRT-1080",
+    "customerName": "Mariana Duarte Costa",
+    "customerEmail": "mari.costa@gmail.com",
+    "customerPhone": "(21) 97155-8092",
+    "shippingAddress": {
+      "street": "Rua Visconde de Pirajá",
+      "number": "310",
+      "neighborhood": "Ipanema",
+      "city": "Rio de Janeiro",
+      "state": "RJ",
+      "cep": "22410-000"
+    },
+    "items": [
+      {
+        "productId": "prod-krt-008",
+        "productName": "Livro: Guia Histórico e Direitos LGBT+ no Brasil",
+        "price": 59.9,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "productId": "prod-krt-007",
+        "productName": "Caneca Cerâmica 350ml \"Café com Orgulho\"",
+        "price": 42,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "subtotal": 101.9,
+    "shipping": 12,
+    "total": 113.9,
+    "paymentMethod": "PIX",
+    "status": "Processando",
+    "trackingCode": "BR740192847RJ",
+    "createdAt": "2026-09-08T18:10:00-03:00",
+    "updatedAt": "2026-09-09T08:30:00-03:00"
+  },
+  {
+    "id": "ord-1079",
+    "orderNumber": "KRT-1079",
+    "customerName": "Gabriel Ferreira Mendes",
+    "customerEmail": "gabriel.mendes@uol.com.br",
+    "customerPhone": "(41) 99120-7764",
+    "shippingAddress": {
+      "street": "Rua XV de Novembro",
+      "number": "920",
+      "neighborhood": "Centro",
+      "city": "Curitiba",
+      "state": "PR",
+      "cep": "80020-310"
+    },
+    "items": [
+      {
+        "productId": "prod-krt-003",
+        "productName": "Boné Strapback \"Amor é Amor\"",
+        "price": 69.9,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "productId": "prod-krt-009",
+        "productName": "Bandeira do Orgulho LGBT+ Progressiva (90x150cm)",
+        "price": 49.9,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1579208575657-c595a05383b7?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "subtotal": 119.8,
+    "shipping": 15,
+    "total": 134.8,
+    "paymentMethod": "Cartão de Crédito",
+    "status": "Entregue",
+    "trackingCode": "BR661029348PR",
+    "createdAt": "2026-08-28T11:05:00-03:00",
+    "updatedAt": "2026-09-01T15:20:00-03:00"
+  }
+]

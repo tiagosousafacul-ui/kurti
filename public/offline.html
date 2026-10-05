@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kurti — Modo Offline</title>
+  <meta name="theme-color" content="#ed003f">
+  <link rel="icon" href="/kurti-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <style>
+    :root {
+      --bg: #fffdf9;
+      --brand: #ed003f;
+      --brand-dark: #b80031;
+      --text: #1a1a1a;
+      --muted: #666666;
+      --card-bg: #ffffff;
+      --border: #f0e6e6;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+    }
+    .card {
+      max-width: 440px;
+      width: 100%;
+      background: var(--card-bg);
+      border-radius: 24px;
+      padding: 40px 28px;
+      box-shadow: 0 10px 30px rgba(237, 0, 63, 0.08);
+      border: 1px solid var(--border);
+    }
+    .logo-img {
+      width: 120px;
+      height: auto;
+      margin: 0 auto 24px;
+      display: block;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      background: #fff0f3;
+      color: var(--brand);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--brand);
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      color: #111;
+    }
+    p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .btn-primary {
+      background: var(--brand);
+      color: #ffffff;
+      border: none;
+      padding: 14px 24px;
+      border-radius: 14px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s ease, transform 0.1s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-primary:hover {
+      background: var(--brand-dark);
+      transform: translateY(-1px);
+    }
+    .btn-secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid #e0d0d0;
+      padding: 12px 20px;
+      border-radius: 14px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn-secondary:hover {
+      background: #faf7f7;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <img src="/kurti-logo.png" alt="Kurti" class="logo-img">
+    <div class="badge">
+      <span class="badge-dot"></span>
+      Modo Offline
+    </div>
+    <h1>Sem conexão à internet</h1>
+    <p>Você está desconectado no momento, mas o Kurti salvou recursos essenciais em cache no seu dispositivo para você continuar navegando assim que a rede voltar.</p>
+    <div class="actions">
+      <button class="btn-primary" onclick="window.location.reload()">Tentar novamente</button>
+      <button class="btn-secondary" onclick="window.history.back()">Voltar para a página anterior</button>
+    </div>
+  </main>
+</body>
+</html>

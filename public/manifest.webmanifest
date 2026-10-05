@@ -1,0 +1,44 @@
+{
+  "id": "/",
+  "name": "Kurti — Conteúdo LGBT+",
+  "short_name": "Kurti",
+  "description": "Agenda local por estado e cidade, cultura, entretenimento, direitos e notícias LGBT+ para todo o Brasil.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fffdf9",
+  "theme_color": "#ed003f",
+  "orientation": "any",
+  "lang": "pt-BR",
+  "categories": [
+    "news",
+    "entertainment",
+    "lifestyle"
+  ],
+  "icons": [
+    {
+      "src": "/kurti-icon.png",
+      "sizes": "626x626",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

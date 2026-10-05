@@ -1,0 +1,10 @@
+{
+  "name": "Kurti Brasil",
+  "description": "Portal de cultura, entretenimento, música independente, streaming e acolhimento LGBTQIA+ de Belo Horizonte e do Brasil.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

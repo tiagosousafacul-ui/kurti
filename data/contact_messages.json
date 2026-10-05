@@ -1,0 +1,14 @@
+[
+  {
+    "id": "msg_1788975589042_g4kr8",
+    "name": "Alexandre Silveira",
+    "email": "alexandre@exemplo.com",
+    "phone": null,
+    "subject": "Teste de Envio",
+    "department": "Geral / Redação",
+    "message": "Mensagem de teste para verificar envio de e-mail e persistência.",
+    "status": "Enviado",
+    "sentAt": "2026-09-09T17:39:49.042Z",
+    "recipient": "contato@kurti.com.br"
+  }
+]
