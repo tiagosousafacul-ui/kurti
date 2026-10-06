@@ -31,7 +31,7 @@ const escapeHtml = (value: string) =>
     .replace(/&#39;/gi, "'")
     .replace(/&lt;/gi, '<')
     .replace(/&gt;/gi, '>')
-    .replace(/\\s+/g, ' ')
+    .replace(/\s+/g, ' ')
     .trim();
 
 const decode = (value: string) => escapeHtml(value);
@@ -50,7 +50,7 @@ const itemsFromFeed = async (feed: typeof FEEDS[number]) => {
   const response = await fetch(feed.url, { headers: { 'user-agent': 'KURTI-News-Sync/1.0' } });
   if (!response.ok) throw new Error(`${feed.source}: HTTP ${response.status}`);
   const xml = await response.text();
-  return [...xml.matchAll(/<item[\\s>]([\\s\\S]*?)<\\/item>/gi)].map((m) => m[1]).map((item) => ({
+  return [...xml.matchAll(/<item[\s>]([\s\S]*?)<\/item>/gi)].map((m) => m[1]).map((item) => ({
     title: tag(item, 'title'),
     description: tag(item, 'description'),
     link: tag(item, 'link'),
