@@ -1,0 +1,54 @@
+[
+  {
+    "id": "thabatta-pimenta-eleita-camara-2026-10-05",
+    "publishedAt": "2026-10-05T14:44:00-03:00",
+    "category": "Notícias",
+    "sectionId": "noticias",
+    "title": "População trans amplia representação no Poder Legislativo",
+    "summary": "Thabatta Pimenta foi eleita deputada federal pelo Rio Grande do Norte, ampliando a representação trans na Câmara ao lado de Duda Salabert e Erika Hilton.",
+    "dateLabel": "5 OUT • BRASIL",
+    "source": "Agência Brasil",
+    "sourceUrl": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-10/populacao-trans-amplia-representacao-no-poder-legislativo",
+    "tone": "violet",
+    "artMark": "BRASIL"
+  },
+  {
+    "id": "lgbt-eleitos-brasil-quase-dobra-2026-10-05",
+    "publishedAt": "2026-10-05T18:37:00-03:00",
+    "category": "Notícias",
+    "sectionId": "noticias",
+    "title": "Número de pessoas LGBT+ eleitas no Brasil quase dobra em 2026",
+    "summary": "Levantamento do Instituto Plena Cidadania aponta 35 pessoas LGBT+ eleitas em 2026, contra 18 em 2022, com 10,7 milhões de votos somados.",
+    "dateLabel": "5 OUT • ELEIÇÕES",
+    "source": "Terra / VoteLGBT",
+    "sourceUrl": "https://www.terra.com.br/noticias/brasil/numero-de-pessoas-lgbt-eleitas-no-brasil-quase-dobra-em-2026%2Cbf287b4c0ab61064951329b4a7a767e6v8bsmdnx.html",
+    "tone": "green",
+    "artMark": "VOTELGBT"
+  },
+  {
+    "id": "ataques-candidaturas-lgbt-13-mil-2026-10-03",
+    "publishedAt": "2026-10-03T14:16:00-03:00",
+    "category": "Notícias",
+    "sectionId": "noticias",
+    "title": "Monitoramento aponta 13 mil ataques a contas de candidaturas LGBT+",
+    "summary": "A plataforma Sentinela identificou 13 mil comentários ofensivos dirigidos a candidaturas LGBT+ durante o período eleitoral, em mais de 307 mil comentários analisados.",
+    "dateLabel": "3 OUT • DIREITOS",
+    "source": "Agência Brasil",
+    "sourceUrl": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-10/monitoramento-aponta-13-mil-ataques-contas-de-candidaturas-lgbt",
+    "tone": "red",
+    "artMark": "SENTINELA"
+  },
+  {
+    "id": "trans-woman-brazil-chamber-2026-10-05",
+    "publishedAt": "2026-10-05T16:00:00-03:00",
+    "category": "Notícias",
+    "sectionId": "noticias",
+    "title": "Thabatta Pimenta faz história como primeira mulher trans do Nordeste eleita para o Congresso",
+    "summary": "A vereadora de Natal Thabatta Pimenta foi eleita para a Câmara dos Deputados com 92.743 votos e será a primeira mulher trans do Nordeste no Congresso Nacional.",
+    "dateLabel": "5 OUT • RIO GRANDE DO NORTE",
+    "source": "Los Angeles Blade",
+    "sourceUrl": "https://www.losangelesblade.com/2026/10/05/transgender-woman-elected-to-brazilian-chamber-of-deputies/",
+    "tone": "blue",
+    "artMark": "THABATTA"
+  }
+]
