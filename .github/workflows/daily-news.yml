@@ -1,0 +1,42 @@
+name: KURTI Daily News Sync
+
+on:
+  schedule:
+    # 08:00 America/Sao_Paulo (UTC-3), every day.
+    - cron: '0 11 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-news:
+    name: Sync LGBT+ news
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Sync news
+        run: bun run scripts/sync-news.ts
+
+      - name: Commit updated news
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/news-updates.json
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração nas notícias."
+            exit 0
+          fi
+          git commit -m "news: sincronização diária"
+          git push
