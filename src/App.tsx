@@ -58,7 +58,26 @@ function MainApp() {
   const { user } = useAuth();
   // Extracted datasets with 4-hour continuous update cycle applied
   const rawStories = rawData.stories as unknown as Story[];
-  const stories = useMemo(() => apply4HourCycleToStories(rawStories), [rawStories]);
+  const [liveNews, setLiveNews] = useState<Story[]>([]);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetch('/news-updates.json', { cache: 'no-store' })
+      .then((res) => (res.ok ? res.json() : []))
+      .then((data) => {
+        if (!cancelled && Array.isArray(data)) setLiveNews(data as Story[]);
+      })
+      .catch(() => {
+        // Keep the embedded news when the live feed is unavailable.
+      });
+    return () => { cancelled = true; };
+  }, []);
+
+  const stories = useMemo(() => {
+    const fallbackNonNews = rawStories.filter((story) => story.sectionId !== 'noticias');
+    const source = liveNews.length > 0 ? [...liveNews, ...fallbackNonNews] : rawStories;
+    return apply4HourCycleToStories(source);
+  }, [rawStories, liveNews]);
   const fullArticles = rawData.fullArticles as unknown as Record<string, FullArticle>;
   const clubs = rawData.clubs as unknown as Club[];
   const cultureGuides = rawData.cultureGuides as unknown as CultureGuides;
